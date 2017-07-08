@@ -1,0 +1,13 @@
+{
+  "name":"VuejS Tip Extension",
+  "manifest_version":2,
+  "description":"A simple chrome Tip generator for VueJS",
+   "version": "0.0.0.1",
+  "permissions":["management"],
+  "chrome_url_overrides":{
+      "new_tab":"index.html"
+  },
+  "icons":{
+    "128":"logo.png"
+  }
+}

@@ -1,0 +1,23 @@
+ <head>
+    <link rel="stylesheet" type="text/css" href="./main.css"></link>
+    <script src='./vue/dist/vue.js'></script>
+</head>
+<div id="app">
+     <!-- your vue goes here -->
+     <div class="tips-board">
+        <section>
+            <div class="tip-number">
+                {{title}}
+            </div>
+        </section>
+     </div>
+      <small class="footer">{{twitter}}</smaLL>
+</div>
+<script src='./data.js'></script>
+<script >
+   new  Vue({
+         el:'#app',
+         data:Data
+            })
+ </script>
+ 
