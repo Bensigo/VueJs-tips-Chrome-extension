@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Vue Tips</title>
+        <link  rel='stylesheet' href='./main.css'  type='text/css' >
+        <script type='text/javascript' src='./assest/data.js'></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- app goes in here-->
+         <div class="tips-board">
+        <section>
+            <div class="tip-number">
+                {{title}}
+            </div>
+           <div class="js-tip" v-HTML='Tip.tip'> </div>
+             <div class="code-block"> 
+                 <div class=".code" v-HTML='Tip.code'><div>  
+           </div>
+         </section>   
+        <button class="tip-button" @click="handleTipBtn"  >
+			    Tips Left: <span > {{tipsLeft}}</span>
+		 </button>
+       
+     </div>
+     <h3 class="footer" style="color:red">I Love VueJS</h3>
+      <small class="footer">twitter:{{twitter}}</smaLL>
+        </div>
+         <script src='./assest/vue.js'></script>        
+        <script src="./assest/app.js"></script>
+    </body>
+</html>
